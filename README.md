@@ -5,6 +5,9 @@ simple HTTP server with golang
 ### 1. build 
 `$ docker build --tag simple-go-server .`
 
+#### or pull
+`$ docker pull hyugak/simple-go-server`
+
 ### 2. run
 `$ docker run -id -p 8080:8081 simple-go-server`
 
