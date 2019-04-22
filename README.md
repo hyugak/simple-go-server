@@ -9,7 +9,9 @@ simple HTTP server with golang
 `$ docker pull hyugak/simple-go-server`
 
 ### 2. run
-`$ docker run -id -p 8080:8081 simple-go-server`
+`$ docker run -d -p 8080:8081 simple-go-server`
+or
+`$ docker run -d -p 8080:8081 hyugak/simple-go-server`
 
 ### 3. snd request and get response
 ```
