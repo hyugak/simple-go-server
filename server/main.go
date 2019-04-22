@@ -12,13 +12,12 @@ type JsonData struct {
 
 func createResponse() string {
     response := JsonData{Message: "Hello World!!"}
-    outputJson, err := json.Marshal(&response)
-
+    json, err := json.MarshalIndent(&response, "", "  ")
     if err != nil {
         panic(err)
     }
 
-    return string(outputJson)
+    return string(json)
 }
 
 func viewHandler(w http.ResponseWriter, r *http.Request) {
