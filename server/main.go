@@ -7,11 +7,11 @@ import (
 )
 
 type JsonData struct {
-    Message string
+    Message string      `json:"message"`
 }
 
 func createResponse() string {
-    response := JsonData{Message: "Hello World"}
+    response := JsonData{Message: "Hello World!!"}
     outputJson, err := json.Marshal(&response)
 
     if err != nil {
